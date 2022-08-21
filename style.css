@@ -148,6 +148,7 @@ body {
   padding-top: 75px;
   position: relative;
   cursor: pointer;
+  transition: 0.3s;
 }
 .showcase__nav-button::before {
   content: "";
@@ -181,6 +182,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  justify-content: center;
 }
 .showcase__item {
   border-bottom: 14px;
@@ -272,6 +274,7 @@ body {
   line-height: 28px;
   color: #ffffff;
   opacity: 0.5;
+  margin-right: 30px;
 }
 .showcase__form {
   max-width: 300px;
@@ -287,6 +290,58 @@ body {
   line-height: 28px;
   color: #000000;
 }
+.showcase__mailling {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.showcase__form {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  border-color: #272727;
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+.showcase__input {
+  padding: 20px 25px;
+  border: 0;
+  background-color: inherit;
+}
+.showcase__button {
+  border: none;
+  width: 18px;
+  height: 18px;
+  padding: 5px;
+  position: relative;
+  background-color: transparent;
+}
+.showcase__button::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url(./img/icons/arrowbtn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: -40px;
+  top: -2px;
+}
+.showcase__new {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ff3232;
+  display: inline-block;
+}
+.showcase__new::first-letter {
+  text-transform: uppercase;
+}
 @media screen and (max-width: 768px) {
   .showcase__nav-item {
     width: 50%;
@@ -294,5 +349,146 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+  }
+}
+.popular {
+  padding: 60px 0;
+}
+.popular__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.popular__btn {
+  margin-right: 50px;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.popular__active {
+  font-family: "Montserat";
+  color: #ffffff;
+  opacity: 1;
+  position: relative;
+}
+.popular__active::before {
+  content: "";
+  position: absolute;
+  width: 94px;
+  height: 2px;
+  background-color: #c80000;
+  bottom: 5px;
+}
+.legend {
+  padding: 60px 0 30px 0;
+
+}
+.Legend .container{
+  display: flex;
+
+}
+.legend__left{
+  margin-right: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.legend__left img{
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .legend__left {
+    width: 300px;
+    min-width: 300px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .legend__left{
+    margin-right: 80px;
+  }
+}
+
+.legend__right h2 {
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+text-transform: uppercase;
+color: #ffffff;
+margin-bottom: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .legend__right h2 {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+}
+
+.legend__right p, .instrument__right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+}
+@media screen and (min-width: 992px) {
+  .legend__right p, .instrument__right p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.instrument .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.instrument__left{
+  margin-bottom: 20px;
+}
+
+.instrument__right{
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .instrument .container {
+    flex-direction: row;
+  }
+}
+
+
+.instrument__right img{
+ display: block;
+ width: 100%;
+ max-width: 400px;
+ margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .instrument .container{
+    flex-direction: row;
+  }
+
+.instrument__left img{
+margin-bottom: 0;
+margin-right: 30px;
+}
+.instrument__right img {
+  width: 300px;
+  min-width: 300px;
+}
+}
+@media screen and (min-width: 992px) {
+  .instrument__left{
+  margin-right: 80px;
   }
 }
